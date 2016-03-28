@@ -1,0 +1,104 @@
+@font-face{
+	font-family: header-text;
+	src: url("../font/cottons.otf");
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+	background: url('../img/bg-3.jpg') no-repeat center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h4{
+	font-family: header-text;
+	font-size: 65px;
+}
+
+#all-container{
+	margin-top: 2%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	position: relative;
+}
+
+#form-input{
+	margin-top: 2%;
+	height: 420px;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 5px;
+	position: relative;
+}
+
+#form-input #content{
+	padding-top: 10px;
+	text-align: center;
+}
+
+#form-input #content i{
+	font-size: 40px;
+	color: #000000;
+}
+
+#form-input #content input{
+	color: black;
+}
+
+#form-input #content label{
+	color: #303030;
+}
+
+#form-input #content button{
+	margin: 20px;
+}
+
+/* PLACEHOLDER COLOR */
+
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	    color:    #595959;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    #595959;
+	   opacity:  1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    #595959;
+	   opacity:  1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color:    #595959;
+	}
+	:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+	  color:    #595959;
+	}
+
+#guests{
+	margin-top: 2%;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 5px;
+	height: 800px;
+}
+
+#guests #content{
+	text-align: center;
+}
+
+footer.page-footer{
+	line-height: 5px;
+	margin-top: -8px;
+	color: #F0F0F0;
+	background-color: #303030;
+}
+
+.page-footer a{
+	color: white;
+}

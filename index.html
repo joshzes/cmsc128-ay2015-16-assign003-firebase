@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!--
+	NOTES:
+		- add space between two divs
+		- fix/allow buttons
+		- validate input
+		- extra: alphabetize
+
+-->
+
+
+<html>
+	<head>
+		<title>Event Guest Attendance</title>
+   	    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+       	<link type="text/css" rel="stylesheet" href="css/animate.css">
+    	<link type="text/css" rel="stylesheet" href="css/index.css">
+ 	</head>
+	
+	<body>
+		
+		<main>
+
+		<div class="row container" id="all-container">
+
+			<div id="form-input" class="col s12 m12 l4 animated fadeInDown">		
+				<div class="container" id="content">		
+					<h4>Add Guest</h4>
+					<div class="row">		
+						<div class="input-field col s12 m12 l12">		
+							<i class="material-icons prefix">perm_identity</i>		
+							<input type="text" id="nameInput" placeholder="Juan dela Cruz Jr." class="validate">	 
+	         					<label for="nameInput" class="active">Name</label>	 
+	         				</div>		
+						<div class="input-field col s12 m12 l12">		
+							<i class="material-icons prefix">business</i>		
+							<input type='text' id='orgInput' placeholder="UPLB Org Society" class="validate">		
+							<label for="orgInput" class="active">Organization</label>
+								</div>		
+						<div class="input-field col s12 m12 l12">		
+							<i class="material-icons prefix">phone</i>		
+							<input type='text' id='contactInput' placeholder="09123456789" class=va"lidate">		
+							<label for="contactInput" class="active">Contact Number</label>		
+						</div>
+						<div class="col sm12 m12 l12">
+							<button class="btn waves-effect waves-light" type="submit">Add Guest</button>
+						</div>
+					</div>		
+				</div>		
+			</div>
+
+			<div id="guests" class="col s12 m12 l7 offset-l1 animated fadeInDown">
+				<div class="container" id="content">
+					<h4>Guest List</h4>
+
+						<table class="highlight">
+							<thead>
+								<tr>
+									<th data-field="name">Name</th>
+									<th data-field="org">Organization</th>
+									<th data-field="contact">Contact Number</th>
+								</tr>
+							</thead>
+							<tbody id="guestList">
+								
+							</tbody>
+
+						</table>
+
+				</div>
+			</div>
+
+		</div>
+
+		</main>
+		
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col s7 m8 l8">
+					Esguerra, Joshze Rica L.
+					</div>
+					<div class="col s4 m3 l3">
+					CMSC 128 AB-7L
+					</div>
+					<div class="col s1 m1 l1">
+					<a href="http://www.archdaily.com/382485/leutschenbach-school-christian-kerez">	&#169;</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script src="js/index.js"></script>
+
+	</body>
+</html>
