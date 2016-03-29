@@ -20,6 +20,7 @@
 				<div class="container" id="content">		
 					<h4>Add Guest</h4>
 					<div class="row">		
+						<form onsubmit="">
 						<div class="input-field col s12 m12 l12">		
 							<i class="material-icons prefix">perm_identity</i>		
 							<input type="text" id="nameInput" placeholder="Juan dela Cruz Jr." class="validate">	 
@@ -27,17 +28,19 @@
 	         				</div>		
 						<div class="input-field col s12 m12 l12">		
 							<i class="material-icons prefix">business</i>		
-							<input type='text' id='orgInput' placeholder="UPLB Org Society" class="validate">		
+							<input type='text' id='orgInput' placeholder="UPLB Org Society (N/A if none)" class="validate">		
 							<label for="orgInput" class="active">Organization</label>
 								</div>		
 						<div class="input-field col s12 m12 l12">		
 							<i class="material-icons prefix">phone</i>		
-							<input type='text' id='contactInput' placeholder="09123456789" class=va"lidate">		
+							<input type='text' id='contactInput' placeholder="09123456789" class="validate">
 							<label for="contactInput" class="active">Contact Number</label>		
 						</div>
-						<div class="col sm12 m12 l12">
-							<button class="btn waves-effect waves-light" type="submit">Add Guest</button>
+						<div class="col s12 m12 l12">
+							<button class="btn waves-effect waves-light" type="submit" id="submitGuest">Add Guest</button>
+							<div id="small">* all fields are required</div>
 						</div>
+						</form>
 					</div>		
 				</div>		
 			</div>
@@ -45,13 +48,13 @@
 			<div id="guests" class="col s12 m12 l7 offset-l1 animated fadeInDown">
 				<div class="container" id="content">
 					<h4>Guest List</h4>
-
 						<table class="highlight">
 							<thead>
 								<tr>
 									<th data-field="name">Name</th>
 									<th data-field="org">Organization</th>
 									<th data-field="contact">Contact Number</th>
+									<th></th>
 								</tr>
 							</thead>
 							<tbody id="guestList">
